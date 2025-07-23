@@ -1,6 +1,5 @@
 from rofi import Rofi
 import math
-import time
 r = Rofi(location=0)
 
 rofi_args = ['-theme', '/home/user/rofi-calculator/calc.rasi']
