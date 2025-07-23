@@ -14,4 +14,4 @@ This project is licensed under MIT.
 # Installation instructions
  - 1. Clone this repo. `git clone https://github.com/KavyanshKhaitan2/rofi-calculator.git`
  - 2. `cd` to the cloned repo.
- - 3. Run `python main.py`. This project does not require any additional dependencies
+ - 3. Run `python main.py`. This project does not require any additional dependencies.
