@@ -1,0 +1,22 @@
+@import "default"
+
+* {
+	background: #999;
+}
+
+
+entry {
+	placeholder: "";
+}
+
+mainbox {
+	height: 1;
+}
+
+listview {
+	enabled: false;
+}
+
+message {
+	padding: 0.5em;
+}
