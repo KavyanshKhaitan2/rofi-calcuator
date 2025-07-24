@@ -20,7 +20,7 @@ while True:
     try:
         eq = r.text_entry("Eval", message=(
             "[Esc] to go back\n\n"
-            "Command History:\n"
+            "Command History (newest first):\n"
             +("\n".join(command_history) if command_history else "[None]")
         ), rofi_args=rofi_args)
         print(eq)
@@ -28,6 +28,6 @@ while True:
             break
         print(eq)
         res = eval(eq, globals={"__builtins__": None, "math": math})
-        command_history.append(f"{eq} = {res}")
+        command_history.insert(0, f"{eq} = {res}")
     except Exception as e:
         r.error(f"Error!\n\n{e}\n\nPress [RETURN] to continue...", rofi_args=rofi_args)
